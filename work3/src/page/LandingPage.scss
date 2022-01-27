@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+$intern: "Roboto Mono", monospace;
+@font-face {
+  font-family: "korean";
+  src: url("../font/KoreanFont.ttf");
+}
+
+.landing-wrap {
+  position: relative;
+  top: 30px;
+  height: 900px;
+}
+
+.landing-container {
+  position: relative;
+  margin: 0 auto;
+  background-color: var(--background);
+  width: 1300px;
+  height: 800px;
+  border-radius: 65px;
+}
+
+
+.landing {
+  position: relative;
+  top: 40px;
+  left: 430px;
+}
+
+.intro {
+  position: relative;
+  font-family: korean;
+  font-size: 30px;
+  text-align: center;
+  color: var(--textcolor);
+}
+
+.login-btn {
+  position: relative;
+  top: 80px;
+  background-color: #f69191;
+  width: 500px;
+  height: 40px;
+  border-radius: 20px;
+  font-family: korean;
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  left: 410px;
+}
+

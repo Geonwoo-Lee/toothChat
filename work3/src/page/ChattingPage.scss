@@ -1,0 +1,331 @@
+@font-face {
+  font-family: "godo";
+  src: url("../font/GodoM.ttf");
+}
+
+.chat-wrap {
+  position: relative;
+  margin: 0 auto;
+  background-color: var(--background);;
+  width: 1300px;
+  height: 800px;
+  top: 20px;
+  border-radius: 65px;
+}
+
+// .chat-wrap {
+//   position: relative;
+//   margin: 0 auto;
+//   background-color: #cdefed;
+//   width: 1300px;
+//   height: 800px;
+//   top: 85px;
+//   border-radius: 65px;
+// }
+
+.chat-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 800px;
+}
+.chat-list-item {
+  height: 650px;
+  overflow: auto;
+}
+
+.chat-list-form {
+  position: relative;
+  top: 80px;
+  left: 50px;
+  border-radius: 10px;
+  background-color: var(--chatListback);
+  width: 400px;
+  height: 650px;
+  text-align: center;
+}
+
+.chat-view-form {
+  position: relative;
+  top: 80px;
+  right: 50px;
+  border-radius: 10px;
+  background-color: var(--chatListback);
+  width: 700px;
+  height: 650px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.chat-list-header {
+  position: relative;
+  font-family: godo;
+  font-size: 20px;
+  top: 30px;
+  width: 100px;
+  display: inline-block;
+  color: var(--textcolor);
+}
+
+.chat-list {
+  position: relative;
+  top: 70px;
+  display: inline-block;
+}
+
+.user-name {
+  position: relative;
+  bottom: 63px;
+  right: 50px;
+  font-weight: bold;
+  font-size: 17px;
+  font-family: godo;
+  text-align: left;
+  left: 100px;
+  width: 270px;
+}
+
+.user-message {
+  margin-left: 100px;
+  text-align: left;
+  display: inline-block;
+  position: relative;
+  bottom: 58px;
+  font-family: godo;
+  width: 270px;
+}
+
+.chat-message {
+  position: relative;
+  display: inline-block;
+  background-color: var(--messageBackground);
+  width: 350px;
+  height: 70px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover{
+      width: 360px;
+      box-shadow: -1px 6px 10px 0 rgba(120, 60, 20, .2);
+  }
+}
+
+
+.message-image {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  right: 130px;
+}
+
+.not-on-chat-container{
+  text-align: center;
+}
+
+.not-on-chat-text{
+  position: relative;
+  top: 80px;
+  font-family: godo;
+  font-size: 30px;
+}
+
+.not-on-chat-image{
+  position: relative;
+  top: 50px;
+  width: 550px;
+}
+
+.back{
+  position: relative;
+  cursor: pointer;
+  font-family: godo;
+  display: inline-block;
+  right: 160px;
+}
+.three-dot:after {
+  content: '\2807';
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  left: 660px;
+  bottom: 12px;
+  color: var(--textcolor);
+  }
+
+  .chat-user-frame{
+    background-color: var( --chatHeader);
+    position: relative;
+    border-radius: 10px;
+  }
+
+  .chat-user-image{
+    width: 50px;
+  }
+
+  .chat-user-name{
+    position: absolute;
+    left: 60px;
+    bottom: 15px;
+    font-family: godo;
+    font-size: 20px;
+    color: var(--textcolor);
+  }
+
+  .leave-chat{
+    position: absolute;
+    left: 600px;
+    bottom: 16px;
+    font-family: godo;
+    font-size: 15px;
+    cursor: pointer;
+    color: var(--textcolor);
+  }
+
+  .camera9{
+    width:70%;
+    height:50%;
+    position:absolute;
+    top:30%;
+    left:15%;
+    background-color:#000;
+    border-radius:5px;
+  }
+  .camera9:after{
+    content:"";
+    width:15px;
+    height:15px;
+    border:4px solid #fff;
+    position:absolute;
+    top:30%;
+    left:35%;
+    background-color:#000;
+    border-radius:15px;
+  }
+  .camera9:before{
+    content:"";
+    width:15%;
+    height:85%;
+    position:absolute;
+    top:10%;
+    left:5%;
+    background-color:#fff;
+    border-radius:2px 0px 0px 2px;
+  }
+
+  .chat-input-frame{
+    position: absolute;
+    vertical-align: bottom;
+    background-color: #fff;
+    display: inline-block;
+    top: 595px;
+  }
+
+  .message-input{
+    position: absolute;
+    top: 15px;
+    left: 50px;
+    height: 30px;
+    width: 550px;
+  }
+
+  .icon{
+      width:55px;
+      height:60px;
+      border:none;
+      position:absolute;
+      float:left;
+      border-radius:5px;
+      cursor: pointer;
+    }
+  
+  .camera9 span{
+    display:block;
+    width:5px;
+    height:5px;
+    position:absolute;
+    top:7%;
+    left:70%;
+    background-color:#fff;
+  }
+  .camera9 span:after{
+    display:block;
+    content:"";
+    width:5px;
+    height:5px;
+    position:absolute;
+    top:-100%;
+    left:-300%;
+    background-color:#000;
+  }
+
+  .sendbtn{
+    position: absolute;
+    display: inline-block;
+    left: 610px;
+    width: 80px;
+    height: 35px;
+    top: 15px;
+    border: none;
+    background-color: var(--chatHeader);
+    color: var(--textcolor);
+    font-family: godo;
+    cursor: pointer;
+  }
+
+  .message-area{
+    position: relative;
+    width: 100%;
+    height: 555px;
+    background-color: var( --chatbackground);
+    overflow: scroll;
+    overflow-x: hidden
+  }
+
+  .message-form{
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    min-height: 60px;
+    width: 400px;
+    float: right;
+    margin-right: 10px;
+  }
+
+  .message-img{
+    width: 40px;
+    
+  }
+  .message-username{
+    position: relative;
+    bottom: 35px;
+    left: 50px;
+    font-family: godo;
+    width: 330px;
+  }
+
+  .message-message{
+    position: relative;
+    left: 50px;
+    bottom: 30px;
+    font-family: godo;
+    width: 330px;
+  }
+
+  .another-message-form{
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    min-height: 60px;
+    width: 400px;
+    float: left;
+    margin-left: 10px;
+  }
+
+
+  .input-file{
+    position: relative;
+    right: 30px;
+    opacity: 0;
+    cursor: pointer;
+    width: 40px;
+    height: 50px;
+  }

@@ -1,0 +1,39 @@
+:root {
+  --background: #96D9B9;
+  --textcolor: black;
+  --messageBackground: #5496fa;
+  --AppTheme: #fff;
+  --interngram: #6480A3;
+  --chatListback: #fff;
+  --chatHeader: rgb(250, 170, 170);
+  --chatbackground: skyblue;
+}
+
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --background: #181a50;
+//     --textcolor: #fff;
+//     --messageBackground: rgb(51, 15, 179);
+//     --AppTheme: rgb(12, 12, 48);
+//     --interngram: #F0DE7A;
+//     --chatListback: rgb(10, 51, 104);
+//     --chatHeader: rgb(19, 2, 82);
+//     --chatbackground: rgb(51, 15, 179);
+//   }
+// }
+
+[data-theme="dark"] {
+  --background: #181a50;
+  --textcolor: #fff;
+  --messageBackground: rgb(51, 15, 179);
+  --AppTheme: rgb(12, 12, 48);
+  --interngram: #F0DE7A;
+  --chatListback: rgb(10, 51, 104);
+  --chatHeader: rgb(19, 2, 82);
+  --chatbackground: rgb(51, 15, 179);
+}
+
+.background{
+  background-color: var(--AppTheme);
+  height: 1200px;
+}
